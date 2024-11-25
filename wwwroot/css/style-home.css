@@ -53,9 +53,9 @@ body {
   font-weight: bold; 
 }
 
-/* Estilo adicional para o ícone de login */
+
 .login-dropdown img {
-  border-radius: 50%; /* Mantém o ícone circular */
+  border-radius: 50%; 
   border: 1px solid #ddd;
   padding: 5px;
 }
@@ -101,7 +101,7 @@ nav ul {
 
 nav ul li a {
   font-size: 18px;
-  color: #60c659;
+  color: #979595;
   font-weight: 800;
   cursor: pointer;
   position: relative;
@@ -116,7 +116,7 @@ nav ul li a {
 
 nav ul li a:focus,
 nav ul li a:hover {
-  color: #979595;
+  color: #60c659;
 }
 
 nav ul li a:focus:after,
@@ -168,17 +168,22 @@ a:hover {
   }
 
   .nav-list,
-  .login-dropdown,
-  .social-media {
+  .login-dropdown {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
 
-  .login-dropdown {
-    margin-left: 0;
-    top: 10px;
+  .login-dropdown img{
+    margin-left: 95%;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    margin-left: 88%;
+    top: 100px;
   }
 
   nav ul {
@@ -186,6 +191,7 @@ a:hover {
     gap: 10px;
   }
 }
+
 
 @media (max-width: 500px) {
   header {
@@ -206,13 +212,20 @@ a:hover {
   }
 
   .login-dropdown {
-    margin-left: 0;
+    margin-left: 74%;
     top: 15px;
   }
 
   nav ul {
     flex-direction: column;
     gap: 8px;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80%;
+    top: 100px;
   }
 
   .social-media a {
